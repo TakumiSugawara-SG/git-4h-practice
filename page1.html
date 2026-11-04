@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Git演習</title>
+    <style>
+        /* 1. 画面全体の背景と文字に優しい色をつける */
+        body {
+            background-color: #f7f9fa; /* 薄いグレーで目に優しい */
+            color: #333333;           /* 真っ黒ではなく濃いグレー */
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* 2. メインタイトルのデザイン */
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #2c3e50;           /* 落ち着いたネイビー */
+            margin-bottom: 50px;
+            letter-spacing: 1px;      /* 文字の間隔を少しあける */
+        }
+
+        /* 3. 各セクション（自己紹介・お知らせ）を白いカード風にする */
+        .section-box {
+            background: #ffffff;      /* 背景を白にする */
+            max-width: 500px;         /* 横幅が広がりすぎないように制限 */
+            margin: 0 auto 30px auto; /* 画面の中央に寄せる */
+            padding: 30px;
+            border-radius: 12px;      /* 角を丸くする */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* ほんのり影をつけて浮き立たせる */
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #34495e;
+            border-bottom: 2px solid #edf2f7; /* 見出しの下にオシャレな線を引く */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 4. テーブルの文字の隙間（余白）を広げて見やすくする */
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        td {
+            padding: 8px 12px;        /* 上下左右にほどよい隙間 */
+        }
+
+        /* 5. リンク（profile）をボタン風にする */
+        a {
+            display: inline-block;
+            background-color: #3498db; /* さわやかなブルー */
+            color: white !important;   /* 文字を白にする */
+            text-decoration: none;     /* 下線を消す */
+            padding: 8px 24px;
+            border-radius: 20px;       /* カプセル型のボタンにする */
+            transition: 0.2s;          /* マウスを乗せたときの動きを滑らかに */
+            margin-top: 15px;
+        }
+
+        /* ボタンにマウスを乗せたときの変化 */
+        a:hover {
+            background-color: #2980b9; /* 少し濃い青になる */
+            transform: translateY(-1px); /* ほんの少し上に浮き上がる */
+        }
+    </style>
+</head>
+<body>
+<h1>Git 4h演習サイト</h1>
+
+<!-- profile section 追加 (外枠に class="section-box" を足しました) -->
+<div align="center" class="section-box">
+    <h2><font size="6">自己紹介</font></h2>
+    <table align="center" width="auto" border="0">
+        <tr>
+            <td align="left"><font size="5">名前：</font></td>
+            <td><font size="5"><strong>カールじいさん</strong></font></td>
+        </tr>
+        <tr>
+            <td align="left"><font size="5">所属：</font></td>
+            <td><font size="5"><strong>[PKS]ポッケの里</strong></font></td>
+        </tr>
+        <tr>
+            <td align="left"><font size="5">趣味：</font></td>
+            <td><font size="5"><strong>宝石集め</strong></font></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><font size="5"><a href="./page2.html"><strong align="center">profile</strong></a></font></td>
+        </tr>
+    </table>
+</div>
+
+<!-- information section 追加 (外枠に class="section-box" を足しました) -->
+<div align="center" class="section-box">
+    <h2><font size="6">お知らせ</font></h2>
+    <table align="center" width="auto" border="0">
+        <tr>
+            <td colspan="2" align="center">
+                <font size="5"><strong>来週、2015へ移民いたします。</strong></font>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
